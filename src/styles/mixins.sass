@@ -1,0 +1,27 @@
+@use 'variables'
+
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin btn
+    box-sizing: border-box
+    padding: 1rem 1.8rem
+    color: variables.$text-color
+    background-image: linear-gradient(to left, #Fa5252, #dd2476, #Fa5252)
+    text-decoration: none
+    border-radius: 3rem
+    background-size: 200%
+    transition: .6s
+        
+    &:hover
+        background-position: right
+        padding: 1.2rem 2rem               
+
+@mixin gradient-border
+    content: ""
+    background: variables.$gradient
+    height: 3px
+    width: 30%
+        
